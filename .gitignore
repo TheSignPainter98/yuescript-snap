@@ -1,4 +1,4 @@
-#snapcraft specifics
+# snapcraft specifics
 /parts/
 /stage/
 /prime/
@@ -10,3 +10,8 @@ __pycache__
 *.pyc
 *_source.tar.bz2
 snap/.snapcraft
+
+# vim files
+*~
+*.swp
+*.swo
