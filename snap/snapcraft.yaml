@@ -26,6 +26,7 @@ apps:
 parts:
   yuescript:
     source: https://github.com/pigpigyyy/Yuescript.git
+    source-tag: v0.15.14
     source-depth: 1
     plugin: make
     override-build: |
