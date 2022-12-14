@@ -12,9 +12,9 @@ description: |
 grade: stable
 confinement: strict
 license: MIT
-# source-code: https://github.com/pigpigyyy/Yuescript # Where the source of the snap/snapcraft.yaml is!
+source-code: https://github.com/TheSignPainter98/yuescript-snap
 issues: https://github.com/pigpigyyy/Yuescript/issues
-# icon: doc/docs/.vuepress/public/image/yuescript.png
+icon: img/yuescript.svg
 
 apps:
   yue:
