@@ -29,9 +29,8 @@ parts:
     source-tag: v0.15.14
     source-depth: 1
     plugin: make
-    override-build: |
-      make
-      mkdir -p $SNAPCRAFT_PART_INSTALL/usr/local/bin/
-      make install DESTDIR=$SNAPCRAFT_PART_INSTALL/
+    override-pull: |
+      snapcraftctl pull
+      patch makefile $SNAPCRAFT_PROJECT_DIR/makefile.patch
     build-packages:
       - g++

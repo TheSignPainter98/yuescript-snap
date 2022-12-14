@@ -1,0 +1,24 @@
+diff --git a/makefile b/makefile
+index 3978d96..ae4cb6b 100644
+--- a/makefile
++++ b/makefile
+@@ -74,7 +74,7 @@ SHELL = /bin/bash
+ # Clear built-in rules
+ .SUFFIXES:
+ # Programs for installation
+-INSTALL = install
++INSTALL = install -D
+ INSTALL_PROGRAM = $(INSTALL)
+ INSTALL_DATA = $(INSTALL) -m 644
+ 
+@@ -248,8 +248,8 @@ dirs:
+ # Installs to the set path
+ .PHONY: install
+ install: release
+-	@echo "Installing to $(DESTDIR)$(INSTALL_PREFIX)/bin"
+-	@$(INSTALL_PROGRAM) $(BIN_PATH)/$(BIN_NAME) $(DESTDIR)$(INSTALL_PREFIX)/bin
++	@echo "Installing to $(DESTDIR)/$(INSTALL_PREFIX)/bin"
++	@$(INSTALL_PROGRAM) $(BIN_PATH)/$(BIN_NAME) $(DESTDIR)/$(INSTALL_PREFIX)/bin/$(BIN_NAME)
+ 
+ # Uninstalls the program
+ .PHONY: uninstall
