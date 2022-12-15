@@ -12,9 +12,11 @@ description: |
 grade: stable
 confinement: strict
 license: MIT
-source-code: https://github.com/TheSignPainter98/yuescript-snap
-issues: https://github.com/pigpigyyy/Yuescript/issues
 icon: img/yuescript.svg
+issues: https://github.com/pigpigyyy/Yuescript/issues
+website: https://yuescript.org/
+source-code: https://github.com/TheSignPainter98/yuescript-snap
+contact: https://github.com/TheSignPainter98/yuescript-snap/issues
 
 apps:
   yue:
