@@ -18,6 +18,13 @@ website: https://yuescript.org/
 source-code: https://github.com/TheSignPainter98/yuescript-snap
 contact: https://github.com/TheSignPainter98/yuescript-snap/issues
 
+plugs:
+  luarocks:
+    interface: personal-files
+    read:
+      - $HOME/.luarocks/share/lua
+      - $HOME/.luarocks/lib/lua
+
 apps:
   yue:
     command: usr/local/bin/yue
