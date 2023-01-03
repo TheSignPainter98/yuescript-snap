@@ -22,8 +22,8 @@ plugs:
   dot-luarocks:
     interface: personal-files
     read:
-      - $HOME/.luarocks/share/lua
-      - $HOME/.luarocks/lib/lua
+      - $HOME/.luarocks/share/lua/5.4
+      - $HOME/.luarocks/lib/lua/5.4
 
 apps:
   yue:
@@ -32,6 +32,9 @@ apps:
       - home
       - removable-media
       - dot-luarocks
+    environment:
+      LUA_PATH: ;;$HOME/.luarocks/share/lua/5.4/?.lua
+      LUA_CPATH: ;;$HOME/.luarocks/lib/lua/5.4/?.so
 
 parts:
   yuescript:
