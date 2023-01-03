@@ -31,6 +31,7 @@ apps:
     plugs:
       - home
       - removable-media
+      - luarocks
 
 parts:
   yuescript:
