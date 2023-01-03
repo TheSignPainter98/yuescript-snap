@@ -24,7 +24,7 @@ distributions.</p>
 
 ## Install
 
-    sudo snap install yuescript
+    sudo snap install --classic yuescript
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-white.svg)](https://snapcraft.io/yuescript)
 

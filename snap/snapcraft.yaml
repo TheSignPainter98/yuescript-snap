@@ -10,7 +10,7 @@ description: |
 
   So Yuescript is a new code base for pushing the language to go forward and being a playground to try introducing new language syntax or programing paradigms to make Moonscript language more expressive and productive.
 grade: stable
-confinement: strict
+confinement: classic
 license: MIT
 icon: img/yuescript.svg
 issues: https://github.com/pigpigyyy/Yuescript/issues
