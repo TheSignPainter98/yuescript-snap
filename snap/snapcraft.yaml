@@ -18,20 +18,20 @@ website: https://yuescript.org/
 source-code: https://github.com/TheSignPainter98/yuescript-snap
 contact: https://github.com/TheSignPainter98/yuescript-snap/issues
 
-plugs:
-  dot-luarocks:
-    interface: personal-files
-    read:
-      - $HOME/.luarocks/share/lua/5.4
-      - $HOME/.luarocks/lib/lua/5.4
+# plugs:
+#   dot-luarocks:
+#     interface: personal-files
+#     read:
+#       - $HOME/.luarocks/share/lua/5.4
+#       - $HOME/.luarocks/lib/lua/5.4
 
 apps:
   yue:
     command: usr/local/bin/yue
-    plugs:
-      - home
-      - removable-media
-      - dot-luarocks
+    # plugs:
+    #   - home
+    #   - removable-media
+    #   - dot-luarocks
     environment:
       LUA_PATH: ;;$HOME/.luarocks/share/lua/5.4/?.lua
       LUA_CPATH: ;;$HOME/.luarocks/lib/lua/5.4/?.so
