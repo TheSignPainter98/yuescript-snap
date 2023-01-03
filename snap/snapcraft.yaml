@@ -19,7 +19,7 @@ source-code: https://github.com/TheSignPainter98/yuescript-snap
 contact: https://github.com/TheSignPainter98/yuescript-snap/issues
 
 plugs:
-  luarocks:
+  dot-luarocks:
     interface: personal-files
     read:
       - $HOME/.luarocks/share/lua
@@ -31,7 +31,7 @@ apps:
     plugs:
       - home
       - removable-media
-      - luarocks
+      - dot-luarocks
 
 parts:
   yuescript:
